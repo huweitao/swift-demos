@@ -66,6 +66,28 @@ func HSafeDelayMainThread(_ time:TimeInterval,_ handler:VoidHandler?) {
     }
 }
 
+// should call on main thread
+func HPopToExistedViewController(targetVC:AnyClass?,completion: ((_ nc: UINavigationController?) -> Void)?) {
+    guard let vc:UIViewController = HGetMostTopViewController() else {
+        return
+    }
+    guard let popedToVireController = targetVC else {
+        return
+    }
+    
+    if let bottomNC = vc.navigationController, bottomNC.isKind(of: popedToVireController.self) {
+        if let bottomVC:UIViewController = bottomNC.viewControllers.first,
+            bottomVC.isKind(of: popedToVireController.self)  {
+            vc.navigationController?.popToRootViewController(animated: true)
+        }
+        completion?(bottomNC)
+    } else {
+        vc.dismiss(animated: true) {
+            HPopToExistedViewController(targetVC: popedToVireController,completion: completion)
+        }
+    }
+}
+
 // MARK: - Private
 
 private func LoopFindTopViewController(_ viewController: UIViewController? = nil) -> UIViewController? {

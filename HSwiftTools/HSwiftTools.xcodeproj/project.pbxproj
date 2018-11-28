@@ -22,6 +22,7 @@
 		096D028B218949C400C1F598 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D028A218949C400C1F598 /* UIColor+Extension.swift */; };
 		0983AB4A218ECED100D37041 /* HBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983AB48218ECED100D37041 /* HBaseCell.swift */; };
 		0983AB4B218ECED100D37041 /* UITableView+GExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983AB49218ECED100D37041 /* UITableView+GExtension.swift */; };
+		09B3263C21A2DF1B00915977 /* adhoc.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09B3263B21A2DF1B00915977 /* adhoc.plist */; };
 		09FCD160218AAF3B00B3FAB2 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FCD15F218AAF3B00B3FAB2 /* Date+Extension.swift */; };
 		09FCD163218AAFE600B3FAB2 /* LogTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FCD162218AAFE600B3FAB2 /* LogTools.swift */; };
 		09FCD165218AB00C00B3FAB2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FCD164218AB00C00B3FAB2 /* Utils.swift */; };
@@ -71,6 +72,7 @@
 		096D028A218949C400C1F598 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		0983AB48218ECED100D37041 /* HBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HBaseCell.swift; sourceTree = "<group>"; };
 		0983AB49218ECED100D37041 /* UITableView+GExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+GExtension.swift"; sourceTree = "<group>"; };
+		09B3263B21A2DF1B00915977 /* adhoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = adhoc.plist; sourceTree = "<group>"; };
 		09FCD15F218AAF3B00B3FAB2 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		09FCD162218AAFE600B3FAB2 /* LogTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTools.swift; sourceTree = "<group>"; };
 		09FCD164218AB00C00B3FAB2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		096D023F2189428D00C1F598 = {
 			isa = PBXGroup;
 			children = (
+				09B3263B21A2DF1B00915977 /* adhoc.plist */,
 				096D024A2189428D00C1F598 /* HSwiftTools */,
 				096D025F2189428E00C1F598 /* HSwiftToolsTests */,
 				096D026A2189428E00C1F598 /* HSwiftToolsUITests */,
@@ -392,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B3263C21A2DF1B00915977 /* adhoc.plist in Resources */,
 				096D02562189428E00C1F598 /* LaunchScreen.storyboard in Resources */,
 				096D0284218947C000C1F598 /* icon_emptyMailBox.png in Resources */,
 				096D02532189428E00C1F598 /* Assets.xcassets in Resources */,
