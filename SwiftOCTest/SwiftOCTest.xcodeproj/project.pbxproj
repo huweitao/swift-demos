@@ -594,7 +594,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HC8RE2RV86;
 				INFOPLIST_FILE = SwiftOCTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,7 +618,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HC8RE2RV86;
 				INFOPLIST_FILE = SwiftOCTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
