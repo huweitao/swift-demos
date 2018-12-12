@@ -22,25 +22,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uso-ut-7kg">
-                                <rect key="frame" x="155" y="160" width="65" height="87"/>
+                                <rect key="frame" x="127.5" y="260" width="120" height="56"/>
                                 <color key="backgroundColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="lVZ-SC-m2O"/>
+                                    <constraint firstAttribute="width" constant="120" id="ISd-1Y-OdL"/>
+                                    <constraint firstAttribute="height" constant="56" id="RTr-EZ-7yx"/>
                                 </constraints>
                                 <state key="normal" title="Open link"/>
                                 <connections>
                                     <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OqM-0N-ebE"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YEZ-nL-M6e">
+                                <rect key="frame" x="16" y="28" width="343" height="160"/>
+                                <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="jYJ-ae-LSX"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.1019250594" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Uso-ut-7kg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="izQ-CX-XOq"/>
-                            <constraint firstItem="Uso-ut-7kg" firstAttribute="top" secondItem="De7-At-BKl" secondAttribute="bottom" constant="140" id="j1D-Ne-16U"/>
+                            <constraint firstItem="YEZ-nL-M6e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="2vw-As-9kC"/>
+                            <constraint firstItem="YEZ-nL-M6e" firstAttribute="top" secondItem="De7-At-BKl" secondAttribute="bottom" constant="8" id="EU8-JW-Wmf"/>
+                            <constraint firstAttribute="trailing" secondItem="YEZ-nL-M6e" secondAttribute="trailing" constant="16" id="YZ4-5E-g0d"/>
+                            <constraint firstItem="Uso-ut-7kg" firstAttribute="top" secondItem="De7-At-BKl" secondAttribute="bottom" constant="240" id="j1D-Ne-16U"/>
+                            <constraint firstItem="Uso-ut-7kg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qOd-gM-ZW9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="Uso-ut-7kg" id="vu5-E0-c9E"/>
+                        <outlet property="linkTextField" destination="YEZ-nL-M6e" id="eZL-fq-wBf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
