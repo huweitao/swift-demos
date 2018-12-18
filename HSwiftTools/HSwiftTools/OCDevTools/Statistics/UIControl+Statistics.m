@@ -28,7 +28,7 @@
 {
     NSString *ocClass = [SimpleSwiz filterSwiftClass:[target class]];
     NSString *identifier = [NSString stringWithFormat:@"%@_%@", ocClass, NSStringFromSelector(action)];
-//    NSLog(@"swz_sendAction! %@",identifier);
+    NSLog(@"swz_sendAction! %@",identifier);
     [UnSeedManager.sharedManager clickTraceBy:identifier];
     [self swz_sendAction:action to:target forEvent:event];
 }
