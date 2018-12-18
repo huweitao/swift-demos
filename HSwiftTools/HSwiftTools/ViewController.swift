@@ -16,6 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.emotionView = EmotionView.loadEmotionView();
+        self.view.addTapGestureOnHandler { tapGesture in
+            print("Tap -->\(tapGesture)")
+        }
     }
     
     @IBAction func showEmotionView(_ sender: Any) {

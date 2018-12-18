@@ -15,6 +15,11 @@
 		0939CFCD21C8D4B900AF3CB1 /* UIGestureRecognizer+Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFC321C8D4B900AF3CB1 /* UIGestureRecognizer+Statistics.m */; };
 		0939CFCE21C8D4B900AF3CB1 /* UIViewController+Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFC521C8D4B900AF3CB1 /* UIViewController+Statistics.m */; };
 		0939CFCF21C8D4B900AF3CB1 /* UnSeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFC721C8D4B900AF3CB1 /* UnSeedManager.m */; };
+		0939CFD221C8DC9300AF3CB1 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFD021C8DC9300AF3CB1 /* Dictionary+Extension.swift */; };
+		0939CFD321C8DC9300AF3CB1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFD121C8DC9300AF3CB1 /* String+Extension.swift */; };
+		0939CFD521C8DEBC00AF3CB1 /* UIView+TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFD421C8DEBC00AF3CB1 /* UIView+TapGesture.swift */; };
+		0939CFE421C91CD300AF3CB1 /* UIView+Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFE221C91CD200AF3CB1 /* UIView+Statistics.m */; };
+		0939CFE521C91CD300AF3CB1 /* UITableView+Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFE321C91CD200AF3CB1 /* UITableView+Statistics.m */; };
 		096D024C2189428D00C1F598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D024B2189428D00C1F598 /* AppDelegate.swift */; };
 		096D024E2189428D00C1F598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D024D2189428D00C1F598 /* ViewController.swift */; };
 		096D02512189428D00C1F598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096D024F2189428D00C1F598 /* Main.storyboard */; };
@@ -74,6 +79,13 @@
 		0939CFC521C8D4B900AF3CB1 /* UIViewController+Statistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Statistics.m"; sourceTree = "<group>"; };
 		0939CFC621C8D4B900AF3CB1 /* UnSeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnSeedManager.h; sourceTree = "<group>"; };
 		0939CFC721C8D4B900AF3CB1 /* UnSeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnSeedManager.m; sourceTree = "<group>"; };
+		0939CFD021C8DC9300AF3CB1 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		0939CFD121C8DC9300AF3CB1 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		0939CFD421C8DEBC00AF3CB1 /* UIView+TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TapGesture.swift"; sourceTree = "<group>"; };
+		0939CFE021C91CD200AF3CB1 /* UITableView+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Statistics.h"; sourceTree = "<group>"; };
+		0939CFE121C91CD200AF3CB1 /* UIView+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Statistics.h"; sourceTree = "<group>"; };
+		0939CFE221C91CD200AF3CB1 /* UIView+Statistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Statistics.m"; sourceTree = "<group>"; };
+		0939CFE321C91CD200AF3CB1 /* UITableView+Statistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Statistics.m"; sourceTree = "<group>"; };
 		096D02482189428D00C1F598 /* HSwiftTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSwiftTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		096D024B2189428D00C1F598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		096D024D2189428D00C1F598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +166,8 @@
 			children = (
 				0939CFB821C8D4B900AF3CB1 /* NSBundle+Fake.h */,
 				0939CFB921C8D4B900AF3CB1 /* NSBundle+Fake.m */,
+				0939CFC621C8D4B900AF3CB1 /* UnSeedManager.h */,
+				0939CFC721C8D4B900AF3CB1 /* UnSeedManager.m */,
 				0939CFBA21C8D4B900AF3CB1 /* SimpleSwiz.h */,
 				0939CFBB21C8D4B900AF3CB1 /* SimpleSwiz.m */,
 				0939CFBC21C8D4B900AF3CB1 /* sources */,
@@ -164,8 +178,10 @@
 				0939CFC321C8D4B900AF3CB1 /* UIGestureRecognizer+Statistics.m */,
 				0939CFC421C8D4B900AF3CB1 /* UIViewController+Statistics.h */,
 				0939CFC521C8D4B900AF3CB1 /* UIViewController+Statistics.m */,
-				0939CFC621C8D4B900AF3CB1 /* UnSeedManager.h */,
-				0939CFC721C8D4B900AF3CB1 /* UnSeedManager.m */,
+				0939CFE021C91CD200AF3CB1 /* UITableView+Statistics.h */,
+				0939CFE321C91CD200AF3CB1 /* UITableView+Statistics.m */,
+				0939CFE121C91CD200AF3CB1 /* UIView+Statistics.h */,
+				0939CFE221C91CD200AF3CB1 /* UIView+Statistics.m */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
@@ -278,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				096D02862189486800C1F598 /* UIView+RedDot.swift */,
+				0939CFD421C8DEBC00AF3CB1 /* UIView+TapGesture.swift */,
 			);
 			path = RedDot;
 			sourceTree = "<group>";
@@ -295,6 +312,8 @@
 			children = (
 				096D02792189429900C1F598 /* View */,
 				096D02882189498C00C1F598 /* Color */,
+				0939CFD021C8DC9300AF3CB1 /* Dictionary+Extension.swift */,
+				0939CFD121C8DC9300AF3CB1 /* String+Extension.swift */,
 				09FCD15F218AAF3B00B3FAB2 /* Date+Extension.swift */,
 				09FCD169218AB0D700B3FAB2 /* UIViewController+Extension.swift */,
 			);
@@ -590,6 +609,7 @@
 				096D027C2189429900C1F598 /* UIView+Extension.swift in Sources */,
 				09FCD16A218AB0D700B3FAB2 /* UIViewController+Extension.swift in Sources */,
 				096D024E2189428D00C1F598 /* ViewController.swift in Sources */,
+				0939CFD321C8DC9300AF3CB1 /* String+Extension.swift in Sources */,
 				0939CFCB21C8D4B900AF3CB1 /* UnSeedConfiguration.swift in Sources */,
 				0939CFCC21C8D4B900AF3CB1 /* UIControl+Statistics.m in Sources */,
 				09FCD165218AB00C00B3FAB2 /* Utils.swift in Sources */,
@@ -602,12 +622,16 @@
 				0939CFCA21C8D4B900AF3CB1 /* UnSeedStatistics.swift in Sources */,
 				0983AB4B218ECED100D37041 /* UITableView+GExtension.swift in Sources */,
 				0939CFCE21C8D4B900AF3CB1 /* UIViewController+Statistics.m in Sources */,
+				0939CFE521C91CD300AF3CB1 /* UITableView+Statistics.m in Sources */,
 				0983AB4A218ECED100D37041 /* HBaseCell.swift in Sources */,
 				09FCD160218AAF3B00B3FAB2 /* Date+Extension.swift in Sources */,
+				0939CFD521C8DEBC00AF3CB1 /* UIView+TapGesture.swift in Sources */,
+				0939CFE421C91CD300AF3CB1 /* UIView+Statistics.m in Sources */,
 				096D02812189466E00C1F598 /* EmotionView.swift in Sources */,
 				0939CFCF21C8D4B900AF3CB1 /* UnSeedManager.m in Sources */,
 				0939CFC921C8D4B900AF3CB1 /* SimpleSwiz.m in Sources */,
 				096D024C2189428D00C1F598 /* AppDelegate.swift in Sources */,
+				0939CFD221C8DC9300AF3CB1 /* Dictionary+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

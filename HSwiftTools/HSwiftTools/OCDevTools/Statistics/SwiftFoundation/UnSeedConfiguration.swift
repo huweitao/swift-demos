@@ -8,8 +8,6 @@
 
 import Foundation
 
-// MARK: - Swift call method
-
 class UnSeedConfiguration: NSObject {
     static let shared:UnSeedConfiguration = UnSeedConfiguration()
     private override init() {
@@ -23,6 +21,9 @@ class UnSeedConfiguration: NSObject {
         }
         UnSeedManager.shared().registerClickTrace{ clickKey in
             self.traceClick(clickKey)
+        }
+        UnSeedManager.shared().registerTableViewSelect { (selectKey, IndexPath, tableview) in
+            self.traceTableViewClick(selectKey: selectKey, tableView: tableview, IndexPath: IndexPath)
         }
     }
     
@@ -42,5 +43,9 @@ class UnSeedConfiguration: NSObject {
     
     func traceClick(_ clickKey:String) {
         print("Trace Click:\(clickKey)")
+    }
+    
+    func traceTableViewClick(selectKey:String,tableView:UITableView,IndexPath:IndexPath) {
+        print("Trace TableView:\(selectKey), indexPath:\(IndexPath)")
     }
 }

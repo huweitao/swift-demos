@@ -12,6 +12,7 @@
 
 @property (nonatomic, copy) PageMonitorHandler pageMonitorHandler;
 @property (nonatomic, copy) ClickHandler clickHandler;
+@property (nonatomic, copy) TableViewSelectHandler tableViewSelectHandler;
 
 @end
 
@@ -51,6 +52,14 @@
     }
 }
 
+
+- (void)tableViewSelectByID:(NSString *)selectKey tableview:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath;
+{
+    if (selectKey.length > 0 && self.tableViewSelectHandler) {
+        self.tableViewSelectHandler(selectKey,indexPath,tableView);
+    }
+}
+
 #pragma mark - Register
 - (void)registerPageMonitor:(PageMonitorHandler)handler
 {
@@ -62,5 +71,9 @@
     self.clickHandler = handler;
 }
 
+- (void)registerTableViewSelect:(TableViewSelectHandler)handler
+{
+    self.tableViewSelectHandler = handler;
+}
 
 @end
