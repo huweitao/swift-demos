@@ -75,15 +75,58 @@ func HPopToExistedViewController(targetVC:AnyClass?,completion: ((_ nc: UINaviga
         return
     }
     
-    if let bottomNC = vc.navigationController, bottomNC.isKind(of: popedToVireController.self) {
-        if let bottomVC:UIViewController = bottomNC.viewControllers.first,
-            bottomVC.isKind(of: popedToVireController.self)  {
-            vc.navigationController?.popToRootViewController(animated: true)
+    // navigation bar
+    if let navigationCon = vc.navigationController {
+        guard let rootVC:UIViewController = navigationCon.viewControllers.first else {
+            print("PopToDashboard:Can not find navigationController VC!")
+            return
         }
-        completion?(bottomNC)
-    } else {
+        
+        let viewControllers:[UIViewController] = navigationCon.viewControllers
+        
+        if navigationCon.presentingViewController != nil {
+            // present stack
+            navigationCon.dismiss(animated: true, completion: {
+                HPopToExistedViewController(targetVC: targetVC, completion: completion)
+            })
+        }
+        else if viewControllers.count > 0 {
+            var hasTarget = false
+            for vc in viewControllers {
+                if vc.isKind(of:popedToVireController) {
+                    hasTarget = true
+                    break;
+                }
+            }
+            if hasTarget {
+                navigationCon.popToRootViewController(animated: true)
+                HSafeDelayMainThread(0.3, {
+                    completion?(navigationCon)
+                })
+            }
+        }
+        else if navigationCon.isKind(of: UINavigationController.self){
+            // maybe the destination navigation is self-made
+            // push stack
+            var timeDelay = 0.0
+            if rootVC.isKind(of: popedToVireController.self) {
+                navigationCon.popToRootViewController(animated: true)
+                timeDelay = 0.3
+            }
+            // after animation completed
+            HSafeDelayMainThread(timeDelay, {
+                completion?(navigationCon)
+            })
+        }
+        else {
+            // in case
+            completion?(navigationCon)
+        }
+    }
+    else {
+        // no navigation bar
         vc.dismiss(animated: true) {
-            HPopToExistedViewController(targetVC: popedToVireController,completion: completion)
+            HPopToExistedViewController(targetVC: targetVC, completion: completion)
         }
     }
 }

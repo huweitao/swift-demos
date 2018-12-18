@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0939CFC821C8D4B900AF3CB1 /* NSBundle+Fake.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFB921C8D4B900AF3CB1 /* NSBundle+Fake.m */; };
+		0939CFC921C8D4B900AF3CB1 /* SimpleSwiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFBB21C8D4B900AF3CB1 /* SimpleSwiz.m */; };
+		0939CFCA21C8D4B900AF3CB1 /* UnSeedStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFBD21C8D4B900AF3CB1 /* UnSeedStatistics.swift */; };
+		0939CFCB21C8D4B900AF3CB1 /* UnSeedConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFBF21C8D4B900AF3CB1 /* UnSeedConfiguration.swift */; };
+		0939CFCC21C8D4B900AF3CB1 /* UIControl+Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFC121C8D4B900AF3CB1 /* UIControl+Statistics.m */; };
+		0939CFCD21C8D4B900AF3CB1 /* UIGestureRecognizer+Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFC321C8D4B900AF3CB1 /* UIGestureRecognizer+Statistics.m */; };
+		0939CFCE21C8D4B900AF3CB1 /* UIViewController+Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFC521C8D4B900AF3CB1 /* UIViewController+Statistics.m */; };
+		0939CFCF21C8D4B900AF3CB1 /* UnSeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939CFC721C8D4B900AF3CB1 /* UnSeedManager.m */; };
 		096D024C2189428D00C1F598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D024B2189428D00C1F598 /* AppDelegate.swift */; };
 		096D024E2189428D00C1F598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D024D2189428D00C1F598 /* ViewController.swift */; };
 		096D02512189428D00C1F598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096D024F2189428D00C1F598 /* Main.storyboard */; };
@@ -51,6 +59,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0939CFB321C8D48A00AF3CB1 /* HSwiftTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HSwiftTools-Bridging-Header.h"; sourceTree = "<group>"; };
+		0939CFB821C8D4B900AF3CB1 /* NSBundle+Fake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Fake.h"; sourceTree = "<group>"; };
+		0939CFB921C8D4B900AF3CB1 /* NSBundle+Fake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Fake.m"; sourceTree = "<group>"; };
+		0939CFBA21C8D4B900AF3CB1 /* SimpleSwiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSwiz.h; sourceTree = "<group>"; };
+		0939CFBB21C8D4B900AF3CB1 /* SimpleSwiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleSwiz.m; sourceTree = "<group>"; };
+		0939CFBD21C8D4B900AF3CB1 /* UnSeedStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnSeedStatistics.swift; sourceTree = "<group>"; };
+		0939CFBF21C8D4B900AF3CB1 /* UnSeedConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnSeedConfiguration.swift; sourceTree = "<group>"; };
+		0939CFC021C8D4B900AF3CB1 /* UIControl+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Statistics.h"; sourceTree = "<group>"; };
+		0939CFC121C8D4B900AF3CB1 /* UIControl+Statistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Statistics.m"; sourceTree = "<group>"; };
+		0939CFC221C8D4B900AF3CB1 /* UIGestureRecognizer+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Statistics.h"; sourceTree = "<group>"; };
+		0939CFC321C8D4B900AF3CB1 /* UIGestureRecognizer+Statistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Statistics.m"; sourceTree = "<group>"; };
+		0939CFC421C8D4B900AF3CB1 /* UIViewController+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Statistics.h"; sourceTree = "<group>"; };
+		0939CFC521C8D4B900AF3CB1 /* UIViewController+Statistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Statistics.m"; sourceTree = "<group>"; };
+		0939CFC621C8D4B900AF3CB1 /* UnSeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnSeedManager.h; sourceTree = "<group>"; };
+		0939CFC721C8D4B900AF3CB1 /* UnSeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnSeedManager.m; sourceTree = "<group>"; };
 		096D02482189428D00C1F598 /* HSwiftTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSwiftTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		096D024B2189428D00C1F598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		096D024D2189428D00C1F598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +140,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0939CFB221C8D47300AF3CB1 /* OCDevTools */ = {
+			isa = PBXGroup;
+			children = (
+				0939CFB721C8D4B900AF3CB1 /* Statistics */,
+				0939CFB321C8D48A00AF3CB1 /* HSwiftTools-Bridging-Header.h */,
+			);
+			path = OCDevTools;
+			sourceTree = "<group>";
+		};
+		0939CFB721C8D4B900AF3CB1 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				0939CFB821C8D4B900AF3CB1 /* NSBundle+Fake.h */,
+				0939CFB921C8D4B900AF3CB1 /* NSBundle+Fake.m */,
+				0939CFBA21C8D4B900AF3CB1 /* SimpleSwiz.h */,
+				0939CFBB21C8D4B900AF3CB1 /* SimpleSwiz.m */,
+				0939CFBC21C8D4B900AF3CB1 /* sources */,
+				0939CFBE21C8D4B900AF3CB1 /* SwiftFoundation */,
+				0939CFC021C8D4B900AF3CB1 /* UIControl+Statistics.h */,
+				0939CFC121C8D4B900AF3CB1 /* UIControl+Statistics.m */,
+				0939CFC221C8D4B900AF3CB1 /* UIGestureRecognizer+Statistics.h */,
+				0939CFC321C8D4B900AF3CB1 /* UIGestureRecognizer+Statistics.m */,
+				0939CFC421C8D4B900AF3CB1 /* UIViewController+Statistics.h */,
+				0939CFC521C8D4B900AF3CB1 /* UIViewController+Statistics.m */,
+				0939CFC621C8D4B900AF3CB1 /* UnSeedManager.h */,
+				0939CFC721C8D4B900AF3CB1 /* UnSeedManager.m */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		0939CFBC21C8D4B900AF3CB1 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				0939CFBD21C8D4B900AF3CB1 /* UnSeedStatistics.swift */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		0939CFBE21C8D4B900AF3CB1 /* SwiftFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				0939CFBF21C8D4B900AF3CB1 /* UnSeedConfiguration.swift */,
+			);
+			path = SwiftFoundation;
+			sourceTree = "<group>";
+		};
 		096D023F2189428D00C1F598 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +212,7 @@
 		096D024A2189428D00C1F598 /* HSwiftTools */ = {
 			isa = PBXGroup;
 			children = (
+				0939CFB221C8D47300AF3CB1 /* OCDevTools */,
 				09FCD166218AB05900B3FAB2 /* Micros */,
 				09FCD161218AAFDC00B3FAB2 /* LogTool */,
 				09FCD15E218AAF0300B3FAB2 /* Utils */,
@@ -359,6 +429,7 @@
 				TargetAttributes = {
 					096D02472189428D00C1F598 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 					};
 					096D025B2189428E00C1F598 = {
 						CreatedOnToolsVersion = 10.0;
@@ -519,15 +590,23 @@
 				096D027C2189429900C1F598 /* UIView+Extension.swift in Sources */,
 				09FCD16A218AB0D700B3FAB2 /* UIViewController+Extension.swift in Sources */,
 				096D024E2189428D00C1F598 /* ViewController.swift in Sources */,
+				0939CFCB21C8D4B900AF3CB1 /* UnSeedConfiguration.swift in Sources */,
+				0939CFCC21C8D4B900AF3CB1 /* UIControl+Statistics.m in Sources */,
 				09FCD165218AB00C00B3FAB2 /* Utils.swift in Sources */,
 				096D02872189486800C1F598 /* UIView+RedDot.swift in Sources */,
+				0939CFCD21C8D4B900AF3CB1 /* UIGestureRecognizer+Statistics.m in Sources */,
 				09FCD168218AB06400B3FAB2 /* BlockMicros.swift in Sources */,
 				096D028B218949C400C1F598 /* UIColor+Extension.swift in Sources */,
 				09FCD163218AAFE600B3FAB2 /* LogTools.swift in Sources */,
+				0939CFC821C8D4B900AF3CB1 /* NSBundle+Fake.m in Sources */,
+				0939CFCA21C8D4B900AF3CB1 /* UnSeedStatistics.swift in Sources */,
 				0983AB4B218ECED100D37041 /* UITableView+GExtension.swift in Sources */,
+				0939CFCE21C8D4B900AF3CB1 /* UIViewController+Statistics.m in Sources */,
 				0983AB4A218ECED100D37041 /* HBaseCell.swift in Sources */,
 				09FCD160218AAF3B00B3FAB2 /* Date+Extension.swift in Sources */,
 				096D02812189466E00C1F598 /* EmotionView.swift in Sources */,
+				0939CFCF21C8D4B900AF3CB1 /* UnSeedManager.m in Sources */,
+				0939CFC921C8D4B900AF3CB1 /* SimpleSwiz.m in Sources */,
 				096D024C2189428D00C1F598 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -704,6 +783,7 @@
 			baseConfigurationReference = 400B38CB7DDE46C43037BF2F /* Pods-HSwiftTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HC8RE2RV86;
 				INFOPLIST_FILE = HSwiftTools/Info.plist;
@@ -714,6 +794,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DMC.HSwiftTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HSwiftTools/OCDevTools/HSwiftTools-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -724,6 +806,7 @@
 			baseConfigurationReference = 604C1D07089EE9F37D30DD54 /* Pods-HSwiftTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HC8RE2RV86;
 				INFOPLIST_FILE = HSwiftTools/Info.plist;
@@ -734,6 +817,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DMC.HSwiftTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HSwiftTools/OCDevTools/HSwiftTools-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
