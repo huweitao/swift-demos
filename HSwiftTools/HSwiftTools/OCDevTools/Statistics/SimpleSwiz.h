@@ -12,8 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SimpleSwiz : NSObject
 
+// swizzle same class
 + (BOOL)simpleSwizzleOriginalClass:(Class)aClass originalSel:(SEL)originalSel replaceSel:(SEL)swizzleSel;
 
+// swizzle different classes
++ (BOOL)simpleSwizzleOriginalClass:(Class)origClass originalSel:(SEL)origSel replaceClass:(Class)newClass replaceSel:(SEL)newSel;
+
+// filter swift class string contains '.'
 + (NSString *)filterSwiftClass:(Class)clazz;
 
 @end
