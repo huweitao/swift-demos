@@ -834,7 +834,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DMC.HSwiftTools;
+				PRODUCT_BUNDLE_IDENTIFIER = "DMC.HSwiftTools.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HSwiftTools/OCDevTools/HSwiftTools-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -857,7 +857,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DMC.HSwiftTools;
+				PRODUCT_BUNDLE_IDENTIFIER = "DMC.HSwiftTools.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HSwiftTools/OCDevTools/HSwiftTools-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
