@@ -76,6 +76,7 @@
     if (self.linkTextField.text.length > 0) {
         customURL = self.linkTextField.text;
     }
+    // gcash://gcash.splashscreen/?redirect=gcash://com.mynt.gcash/app/006300000200?url=https%3A%2F%2Fs3.ap-southeast-1.amazonaws.com%2Fuat.m.gcash.com%2Fgcashapp%2Fgcash-gift-money-web%2Findex.html%23%2Freceiving?bizNo=2018102910121413010100170737900004452
     // gcash://gcash.splashscreen/?redirect=gcash%3A%2F%2Fcom.mynt.gcash%2Fapp%2F006300000700
     // valid gcash://gcash.splashscreen/?redirect=gcash%3A%2F%2Fcom.mynt.gcash%2Fapp%2F006300000200%3Furl%3Dhttps%253A%252F%252Fs3.ap-southeast-1.amazonaws.com%252Fuat.m.gcash.com%252Fgcashapp%252Fgcash-gift-money-web%252Findex.html%2523%252Freceiving%253FbizNo%253D2018102710121413010100170253800001013
     // gcash://gcash.splashscreen/?redirect=gcash://com.mynt.gcash/app/006300000200?url=https://s3.ap-southeast-1.amazonaws.com/uat.m.gcash.com/gcashapp/gcash-gift-money-web/index.html#/receiving?bizNo=2018102710121413010100170253800001013

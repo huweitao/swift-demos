@@ -1,18 +1,18 @@
 //
-//  UITableView+Statistics.m
+//  UICollectionView+Statistics.m
 //  GCash
 //
-//  Created by huweitao on 2018/12/18.
+//  Created by huweitao on 2018/12/20.
 //  Copyright © 2018年 GXI. All rights reserved.
 //
 
-#import "UITableView+Statistics.h"
+#import "UICollectionView+Statistics.h"
 #import "SimpleSwiz.h"
 #import <objc/runtime.h>
 #import "UnSeedManager.h"
 #import "UIView+Statistics.h"
 
-@implementation UITableView (Statistics)
+@implementation UICollectionView (Statistics)
 
 + (void)load
 {
@@ -21,20 +21,21 @@
         
         BOOL swzFlag = [SimpleSwiz simpleSwizzleOriginalClass:self originalSel:@selector(setDelegate:) replaceSel:@selector(swz_setDelegate:)];
         if (!swzFlag) {
-            NSLog(@"Fail to swizzle UITableView setDelegate:!");
+            NSLog(@"Fail to swizzle UICollectionView setDelegate:!");
         }
         
     });
 }
 
-- (void)swz_setDelegate:(id<UITableViewDelegate>)delegate
+- (void)swz_setDelegate:(id<UICollectionViewDelegate>)delegate
 {
     [self swz_setDelegate:delegate];
     
-    SEL origSEL = @selector(tableView:didSelectRowAtIndexPath:);
+    SEL origSEL = @selector(collectionView:didSelectItemAtIndexPath:);
     
-    SEL repSELID =  NSSelectorFromString([self swzIdentifierClass:[delegate class] tableview:self]);
-    SEL swzSEL = @selector(swz_tableView:didSelectRowAtIndexPath:);
+    
+    SEL repSELID =  NSSelectorFromString([self swzIdentifierClass:[delegate class] collectionView:self]);
+    SEL swzSEL = @selector(swz_collectionView:didSelectItemAtIndexPath:);
     // optional
     if (![SimpleSwiz isContainSel:origSEL inClass:[delegate class]]) {
         return;
@@ -43,7 +44,7 @@
     BOOL addsuccess = class_addMethod([delegate class],
                                       repSELID,
                                       method_getImplementation(class_getInstanceMethod([self class],swzSEL)),
-                                    nil);
+                                      nil);
     
     //如果添加成功了就直接交换实现， 如果没有添加成功，说明之前已经添加过并交换过实现了
     if (addsuccess) {
@@ -53,29 +54,28 @@
     }
 }
 
-#pragma mark - TableView Delegate swizzle
-
-- (void)swz_tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark - UICollectionView Delegate swizzle
+- (void)swz_collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:true];
-    NSString *identifier = [tableView swzIdentifierClass:[self class] tableview:tableView];
-    NSLog(@"TableView Select %@ at %ld",identifier,indexPath.row);
+//    [tableView deselectRowAtIndexPath:indexPath animated:true];
+    NSString *identifier = [collectionView swzIdentifierClass:[self class] collectionView:collectionView];
+    NSLog(@"UICollectionView Select %@ at %ld",identifier,indexPath.row);
     SEL sel = NSSelectorFromString(identifier);
     if ([self respondsToSelector:sel]) {
         IMP imp = [self methodForSelector:sel];
         void (*func)(id, SEL,id,id) = (void *)imp;
-        func(self, sel,tableView,indexPath);
+        func(self, sel,collectionView,indexPath);
     }
-    [UnSeedManager.sharedManager tableViewSelectByID:identifier tableview:tableView indexPath:indexPath];
+    [UnSeedManager.sharedManager collectionViewSelectByID:identifier tableview:collectionView indexPath:indexPath];
 }
 
-- (NSString *)swzIdentifierClass:(Class)clazz tableview:(UITableView *)tableView
+- (NSString *)swzIdentifierClass:(Class)clazz collectionView:(UICollectionView *)collectionview
 {
     NSString *sTag = self.statisticsTag;
     if (!sTag) {
         sTag = @"IMP";
     }
-    return [NSString stringWithFormat:@"%@_%@_%@", [SimpleSwiz filterSwiftClass:clazz],sTag,NSStringFromClass([tableView class])];
+    return [NSString stringWithFormat:@"%@_%@_%@", [SimpleSwiz filterSwiftClass:clazz],sTag,NSStringFromClass([collectionview class])];
 }
 
 @end

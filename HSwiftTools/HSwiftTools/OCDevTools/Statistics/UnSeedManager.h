@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^PageMonitorHandler)(NSString *,BOOL);
 typedef void(^ClickHandler)(NSString *);
 typedef void(^TableViewSelectHandler)(NSString *,NSIndexPath *,UITableView *);
+typedef void(^CollectionViewSelectHandler)(NSString *,NSIndexPath *,UICollectionView *);
 
 @interface UnSeedManager : NSObject
 
@@ -24,11 +25,13 @@ typedef void(^TableViewSelectHandler)(NSString *,NSIndexPath *,UITableView *);
 - (void)endPageMonitorBy:(NSString *)pageKey;
 - (void)clickTraceBy:(NSString *)clickKey;
 - (void)tableViewSelectByID:(NSString *)selectKey tableview:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath;
+- (void)collectionViewSelectByID:(NSString *)selectKey tableview:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath;
 
 // register
 - (void)registerPageMonitor:(PageMonitorHandler)handler;
 - (void)registerClickTrace:(ClickHandler)handler;
 - (void)registerTableViewSelect:(TableViewSelectHandler)handler;
+- (void)registerCollectionViewSelect:(CollectionViewSelectHandler)handler;
 
 @end
 

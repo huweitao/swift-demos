@@ -13,6 +13,7 @@
 @property (nonatomic, copy) PageMonitorHandler pageMonitorHandler;
 @property (nonatomic, copy) ClickHandler clickHandler;
 @property (nonatomic, copy) TableViewSelectHandler tableViewSelectHandler;
+@property (nonatomic, copy) CollectionViewSelectHandler collectionViewSelectHandler;
 
 @end
 
@@ -60,6 +61,14 @@
     }
 }
 
+
+- (void)collectionViewSelectByID:(NSString *)selectKey tableview:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath
+{
+    if (selectKey.length > 0 && self.collectionViewSelectHandler) {
+        self.collectionViewSelectHandler(selectKey,indexPath,collectionView);
+    }
+}
+
 #pragma mark - Register
 - (void)registerPageMonitor:(PageMonitorHandler)handler
 {
@@ -74,6 +83,12 @@
 - (void)registerTableViewSelect:(TableViewSelectHandler)handler
 {
     self.tableViewSelectHandler = handler;
+}
+
+
+- (void)registerCollectionViewSelect:(CollectionViewSelectHandler)handler
+{
+    self.collectionViewSelectHandler = handler;
 }
 
 @end

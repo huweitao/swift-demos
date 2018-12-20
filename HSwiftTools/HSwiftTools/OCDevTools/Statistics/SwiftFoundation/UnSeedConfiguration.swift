@@ -22,8 +22,11 @@ class UnSeedConfiguration: NSObject {
         UnSeedManager.shared().registerClickTrace{ clickKey in
             self.traceClick(clickKey)
         }
-        UnSeedManager.shared().registerTableViewSelect { (selectKey, IndexPath, tableview) in
-            self.traceTableViewClick(selectKey: selectKey, tableView: tableview, IndexPath: IndexPath)
+        UnSeedManager.shared().registerTableViewSelect { (selectKey, indexPath, tableview) in
+            self.traceTableViewClick(selectKey: selectKey, tableView: tableview, IndexPath: indexPath)
+        }
+        UnSeedManager.shared().registerCollectionViewSelect{ (selectKey, indexPath, collectionView) in
+            self.traceCollectionViewClick(selectKey:selectKey,collectionView:collectionView,IndexPath:indexPath)
         }
     }
     
@@ -47,5 +50,9 @@ class UnSeedConfiguration: NSObject {
     
     func traceTableViewClick(selectKey:String,tableView:UITableView,IndexPath:IndexPath) {
         print("Trace TableView:\(selectKey), indexPath:\(IndexPath)")
+    }
+    
+    func traceCollectionViewClick(selectKey:String,collectionView:UICollectionView,IndexPath:IndexPath) {
+        print("Trace CollectionView:\(selectKey), indexPath:\(IndexPath)")
     }
 }

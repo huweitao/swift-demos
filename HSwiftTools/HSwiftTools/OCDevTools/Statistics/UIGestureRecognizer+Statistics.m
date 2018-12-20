@@ -75,7 +75,7 @@
 // The IMP is added to target class. The self in context is target class instead of UIGestureRecognizer
 - (void)responseSWZ_gesture:(UIGestureRecognizer *)gesture
 {
-    NSLog(@"Gesture swizzle responseSWZ:%@<>%@",gesture.view,gesture.bindMethodName);
+//    NSLog(@"Gesture swizzle responseSWZ:%@<>%@",gesture.view,gesture.bindMethodName);
     NSString *identifier = [UIGestureRecognizer swizzleMethodFrom:[self class] actionName:gesture.bindMethodName];
     
     if (!identifier) {
